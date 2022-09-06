@@ -10,17 +10,30 @@ export const HomeContainer = styled.div`
    justify-content: center;
    align-items: center;
    width: 100%;
-   
 
    .title{
     
     margin-bottom: 20px;
+    @media screen and (max-width: 700px){
+         
+            width: 100%;
+        }
    }
 
    .logo{
-    height: 150px;
-     margin-bottom: 20px;
+        height: 150px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 700px){
+         
+            width: 100%;
+        }
    }
+
+   @media screen and (max-width: 700px){
+         
+         padding: 10px;
+        }
 `;
 
 export const PlayButton = styled(Link)`

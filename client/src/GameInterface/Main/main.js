@@ -170,7 +170,7 @@ const Main = () => {
 
   }
 
-  const playAgain = () =>{
+  const playAgain = () => {
     window.location.reload(true)
   }
 
@@ -192,30 +192,32 @@ const Main = () => {
               <br />
               <p className='verdict'>{verdict}</p>
             </div>
-         
-            <div className='cards'>
+
+            <div className='cardss'>
               <img src={paper} alt="Paper" onClick={() => { pickMove("paper"); }} />
               <img src={rock} alt="Rock" onClick={() => { pickMove("rock"); }} />
               <img src={scissor} alt="Scissor" onClick={() => { pickMove("scissor"); }} />
             </div>
           </>
           :
-          <div className='dialog-box' style={{ background: didWin ? '#F6FFED' : '#FFF2F0', border: didWin ? '1px solid #52C41A' : '1px solid #FF4D4F' }}>
-            {
-              didWin ?
-                <>
-                  <h2>Congratulations!</h2>
-                  <h3>You've won the game!</h3>
-                </>
-                :
-                <>
-                  <h2>You lose this round!</h2>
-                  <h3>Better luck next time!</h3>
-                </>
-            }
-            <br/>
-            <PlayButton to="" onClick={playAgain}>Play Again</PlayButton>
-          </div>
+          <>
+            <div className='dialog-box' style={{ background: didWin ? '#F6FFED' : '#FFF2F0', border: didWin ? '1px solid #52C41A' : '1px solid #FF4D4F' }}>
+              {
+                didWin ?
+                  <>
+                    <h2>Congratulations!</h2>
+                    <h3>You've won the game!</h3>
+                  </>
+                  :
+                  <>
+                    <h2>You lose this round!</h2>
+                    <h3>Better luck next time!</h3>
+                  </>
+              }
+              <br />
+              <PlayButton to="" onClick={playAgain}>Play Again</PlayButton>
+            </div>
+          </>
       }
     </MainContainer>
   )

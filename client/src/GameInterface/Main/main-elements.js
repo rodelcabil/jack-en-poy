@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
    height: 100vh;
    background: #F0F0F0;
    padding: 60px;
-   width: 100%;
+   width: 100vw;
    align-items: center;
    justify-content: center;
    flex-direction: column;
@@ -28,12 +28,11 @@ export const MainContainer = styled.div`
         text-transform: uppercase;
     }
 
-    .cards{
+    .cardss{
         display: flex;
         width: 400px;
         margin: auto;
         justify-content: space-between;
-        margin-top: 20px;
         img{
             height: 100px;
             width: 100px;

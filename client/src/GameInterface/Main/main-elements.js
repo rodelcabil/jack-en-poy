@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   background-image: url("https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?w=360");
 
     .title{
         height: auto;

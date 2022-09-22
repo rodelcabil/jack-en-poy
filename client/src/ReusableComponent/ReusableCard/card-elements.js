@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
    display: flex;
-   background: #F0F0F0;
+   background: transparent;
    padding: 40px 60px;
    width: 400px;
    justify-content: center;
